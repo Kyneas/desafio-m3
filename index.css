@@ -1,0 +1,190 @@
+* {
+  box-sizing: border-box;
+}
+body {
+  margin: 0;
+  padding: 0;
+}
+.header {
+  background-image: url("imagenes/puntitos.png");
+}
+.barrita {
+  display: flex;
+  justify-content: space-between;
+  margin: 18px;
+  align-items: center;
+}
+.logo {
+  width: 75px;
+}
+.burger {
+  width: 40px;
+}
+.opciones-burger {
+  display: none;
+}
+.header-2{
+  display:flex;
+  flex-direction: column;
+  align-items: center;
+}
+.titulo{
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 700;
+  font-size: 48px;
+  text-align: center;
+}
+.avatar{
+  width: 318px;
+}
+@media (min-width: 769px) {
+  .barrita {
+    margin: 36px 80px;
+  }
+
+  .burger {
+    display: none;
+  }
+  .opciones-burger {
+    display: flex;
+    justify-content: space-between;
+  }
+  .logo {
+    width: auto;
+  }
+  .label-barrita {
+    margin: 20px;
+    padding: 0px;
+    font-family: "Roboto", sans-serif;
+    font-weight: 700;
+  }
+  .header-2{
+    flex-direction:row;
+    justify-content: space-between;
+    margin: 0px 80px
+  }
+  .titulo{
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 700;
+    font-size: 48px;
+    text-align:left
+  }
+  .avatar{
+    width: 435px;
+  }
+}
+.presentacion{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #141414;
+  padding:68px;
+}
+.contenedor-presentacion{
+  display:flex;
+  flex-direction: column;
+  align-items: center;
+  padding:0px
+}
+.soy-matias{
+  display:flex;
+  flex-direction: column;
+  align-items: center;
+}
+.titulo-matias{
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 700;
+  font-size: 32px;
+  color: #FAFAFA;
+  margin:0px
+}
+.algo-de-mi{
+  font-family: 'Roboto', sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  width: 312px;
+  color: #FAFAFA;
+  padding:0px;
+  margin-top: 41px;
+  margin-bottom: 57px;
+}
+.logo-ok{
+  height: 80px;
+}
+@media (min-width: 769px) {
+  .contenedor-presentacion{
+    flex-direction: row-reverse;
+    gap:90px
+  }
+  .logo-ok{
+    height: 211px;
+  }
+  .soy-matias{
+    align-items: flex-start;
+  }
+  .algo-de-mi{
+    font-size: 24px;
+    width: 532px;
+  }
+}
+.servicios{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 65px 0px 65px 0px;
+}
+.contenedor-servicios{
+  display:flex;
+  flex-direction: column;
+  align-items: center;
+  gap:56px
+}
+.titulo-servicios{
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 700;
+  font-size: 32px;
+}
+.servicios-varios{
+  display: flex;
+  flex-direction: column;
+  gap:109px;
+  padding: 0px;
+}
+.servicio{
+  display: flex;
+  flex-direction: column;
+  gap:15px;
+  align-items: center;
+}
+.logo-pc{
+  width: 138px;
+}
+.titulo-servicio{
+  font-family: 'Roboto', sans-serif;
+  font-weight: 700;
+  font-size: 24px;
+}
+.descripcion-servicio{
+  font-family: 'Roboto', sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  width: 262px;
+  text-align: center;
+}
+@media (min-width: 769px) {
+  .servicios{
+    padding: 59px 0px 100px 0px;
+  }
+  .contenedor-servicios{
+    gap:75px
+  }
+  .titulo-servicios{
+    font-size: 48px;
+  }
+  .servicios-varios{
+    display:grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    justify-content: space-between;
+    width: 100%;
+  }
+}

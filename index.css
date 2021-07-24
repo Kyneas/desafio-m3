@@ -206,7 +206,7 @@ body {
   justify-content: center;
   align-items: center;
   border:solid;
-  width:100%;
+  width: 100%;
   background-color: #141414;
   padding: 70px 0px 70px 0px;
 }
@@ -215,11 +215,14 @@ body {
   flex-direction: column;
   align-items:center;
   justify-content: center;
-  width: 335px;
+  max-width: 335px;
   padding: 0px;
 }
 .formulario{
-
+display:flex;
+flex-direction: column;
+max-width: 335px;
+margin: 60px 0px 60px 0px;
 }
 .escribime{
   font-family: 'Open Sans', sans-serif;
@@ -228,16 +231,37 @@ body {
   margin: 0px;
   padding: 0px;
   color: #FAFAFA;
+  max-width: 335px;
 }
 .contenedor-input{
   display:flex;
   flex-direction: column;
   gap:9px;
-  width: 100%;
+  max-width: 335px;
 }
 .label-formu{
   font-family: 'Roboto', sans-serif;
   font-weight: 400;
   font-size: 13px;
   color: #FAFAFA;
+  max-width: 335px;
+}
+.area-mensaje{
+  resize: none;
+  height: 114px;
+}
+.input-nombre,.input-mail,.area-mensaje{
+  max-width: 335px;
+}
+.contenedor-mail{
+  margin: 27px 0px 21px 0px
+}
+.boton{
+  background-color: #FFD953;
+  height: 45px;
+  max-width: 335px;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 700;
+  border-radius: 3px;
+  margin-top: 60px
 }

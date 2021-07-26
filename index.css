@@ -293,6 +293,11 @@ body {
   display:grid;
   gap:29px
 }
+.instagram,.linkedin,.github{
+  display: flex;
+  align-items: center;
+  gap:8px
+}
 @media (min-width: 769px) {
   .seccion-5{
     background-image: url("imagenes/puntitos\ \(1\).png");

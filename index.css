@@ -201,67 +201,102 @@ body {
   }
 }
 /* Seccion 4 */
-.seccion-4{
-  display:flex;
-  justify-content: center;
+
+.seccion-4 {
+  display: flex;
   align-items: center;
-  border:solid;
-  width: 100%;
-  background-color: #141414;
-  padding: 70px 0px 70px 0px;
-}
-.contenedor-seccion-4{
-  display:flex;
-  flex-direction: column;
-  align-items:center;
   justify-content: center;
-  max-width: 335px;
-  padding: 0px;
-}
-.formulario{
-display:flex;
-flex-direction: column;
-max-width: 335px;
-margin: 60px 0px 60px 0px;
+  padding: 70px 20px;
+  flex-direction: column;
+  background-color: #141414;
 }
 .escribime{
   font-family: 'Open Sans', sans-serif;
   font-weight: 700;
   font-size: 32px;
-  margin: 0px;
-  padding: 0px;
   color: #FAFAFA;
-  max-width: 335px;
+  margin: 0px 0px 60px 0px;
+  padding: 0px;
 }
-.contenedor-input{
-  display:flex;
-  flex-direction: column;
-  gap:9px;
-  max-width: 335px;
+.form {
+  display: grid;
+  gap: 27px;
+  width: 100%;
+  max-width: 376px;
 }
-.label-formu{
+.label {
   font-family: 'Roboto', sans-serif;
   font-weight: 400;
   font-size: 13px;
+  display: block;
+  padding: 0px;
+  margin-bottom: 9px;
   color: #FAFAFA;
-  max-width: 335px;
 }
-.area-mensaje{
-  resize: none;
-  height: 114px;
-}
-.input-nombre,.input-mail,.area-mensaje{
-  max-width: 335px;
-}
-.contenedor-mail{
-  margin: 27px 0px 21px 0px
-}
-.boton{
+.boton {
   background-color: #FFD953;
+  font-size: 18px;
   height: 45px;
-  max-width: 335px;
-  font-family: 'Roboto', sans-serif;
+  border: none;
+  border-radius: 2px;
+  font-family: 'Open Sans', sans-serif;
   font-weight: 700;
-  border-radius: 3px;
-  margin-top: 60px
+  margin-top: 33px;
+}
+.input-email,
+.textarea,.input-nombre {
+  font-family: 'Roboto', sans-serif;
+  background-color: #FFFFFF;
+  border: none;
+  width: 100%;
+  font-size: 12px;
+  margin:0px;
+  border-style: inset;
+}
+.input-email,.input-nombre {
+  height: 45px;
+}
+.textarea {
+  height: 113px;
+  resize: none;
+}
+@media (min-width: 769px) {
+  .seccion-4 {
+    padding: 116px 0px;
+    flex-direction: row;
+    gap: 77px;
+    align-items: flex-start;
+  }
+  .escribime{
+    font-size: 48px;
+  }
+}
+/* Seccion 5 */
+.seccion-5{
+  display:flex;
+  background-color: #DBDBDB;
+  flex-direction: column;
+  gap:89px;
+  padding:53px 0px 119px 20px;
+}
+.copyright{
+  font-family: 'Roboto', sans-serif;
+  font-weight: 400;
+  font-size: 11px;
+}
+.label-red-social{
+  font-family: 'Roboto', sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+}
+.redes-sociales{
+  display:grid;
+  gap:29px
+}
+@media (min-width: 769px) {
+  .seccion-5{
+    background-image: url("imagenes/puntitos\ \(1\).png");
+    flex-direction: row;
+    justify-content: space-between;
+    padding:95px 215px 95px 80px  }
 }
